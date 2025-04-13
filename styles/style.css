@@ -22,11 +22,10 @@
 
 .cover {
   position: relative;
-  z-index: -2;
+  z-index: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 757px;
   padding: 165px 50px 50px 50px;
   color: #fff;
   background-image: url(../images/cover.jpg);
@@ -63,8 +62,8 @@
   list-style: circle;
 }
 
-.header__menu-list:first-child {
-  margin-left: -19px;
+.header__links-list-item:first-of-type {
+  margin-left: 0;
 }
 
 .header__links-list-item_no-bullit {
@@ -109,6 +108,7 @@
 }
 
 .cover__title {
+  padding-bottom: 106px;
   font-size: 100px;
   line-height: 115%;
   letter-spacing: 0.3em;
@@ -259,8 +259,12 @@
   line-height: 120%;
 }
 
-.about__text p:first-of-type {
+.about__text p {
   margin-bottom: 24px;
+}
+
+.about__text p:last-of-type {
+  margin-bottom: 0;
 }
 
 .footer__address {
