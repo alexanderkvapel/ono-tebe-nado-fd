@@ -1,0 +1,36 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "main": "gulpfile.js",
+  "scripts": {
+    "prettier": "prettier --check './src/**/*.{html,css,js}'",
+    "prettierFix": "prettier --write './src/**/*.{html,css,js}'",
+    "lint": "stylelint './src/**/*.css'",
+    "lintFix": "stylelint './src/**/*.css' --fix",
+    "checkAll": "npm run prettier && npm run lint",
+    "fixAll": "npm run prettierFix && npm run lintfix",
+    "build": "gulp build",
+    "dev": "gulp"
+  },
+  "author": "Alexander Kvapel",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "browser-sync": "^3.0.4",
+    "cssnano": "^7.0.7",
+    "del": "^6.0.0",
+    "gulp": "^5.0.1",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^10.0.0",
+    "html-minifier": "^4.0.0",
+    "postcss": "^8.5.6",
+    "postcss-combine-media-query": "^2.0.0",
+    "prettier": "^3.6.2",
+    "stylelint": "^16.21.1"
+  },
+  "browserslist": [
+    "last 5 versions"
+  ]
+}
