@@ -12,12 +12,4 @@
 
 Установка зависимостей:
 
-```npm i autoprefixer browser-sync cssnano del@6.0.0 gulp gulp-concat-css gulp-plumber gulp-postcss html-minifier postcss postcss-combine-media-query prettier stylelint --save-dev```
-
-Сборка проекта:
-
-```npm run build```
-
-Запуск проекта:
-
-```npm run dev```
+```npm i prettier stylelint --save-dev```
